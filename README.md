@@ -1,6 +1,6 @@
 # Multi-Head Attention Residual Unfolded Network for Model-Based Pansharpening
 
-[![arXiv](https://img.shields.io/badge/arXiv-<arxiv_id>-B31B1B.svg)](https://arxiv.org/abs/<arxiv_id>)
+[![arXiv](https://img.shields.io/badge/arXiv-2409.02675-B31B1B.svg)](https://arxiv.org/abs/2409.02675)
 
 This repository contains the implementation and additional resources for the paper:
 
