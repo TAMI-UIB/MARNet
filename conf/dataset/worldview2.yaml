@@ -1,0 +1,8 @@
+name: WorldView2
+datamodule:
+  _target_: data.worldview2.WorldViewDataModule
+  batch_size: ${model.train.batch_size}
+  num_workers: ${model.train.num_workers}
+  sampling: ${sampling}
+ms_channels: 1
+hs_channels: 8

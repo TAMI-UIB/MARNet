@@ -1,0 +1,28 @@
+defaults:
+  - _self_
+  - model: MARNet
+  - dataset: worldview2
+
+sampling: 4
+
+hydra:
+  run:
+    dir: ./
+  output_subdir: null
+
+devices:
+  - 0
+
+day: None
+
+nickname: "default"
+
+checkpoint:
+  _target_:  pytorch_lightning.callbacks.ModelCheckpoint
+  monitor: 'PSNR'
+  filename: 'best'
+  save_last: True
+  mode: 'max'
+  every_n_epochs: 1
+  every_n_train_steps: 0
+  save_on_train_epoch_end: True

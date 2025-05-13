@@ -1,0 +1,27 @@
+defaults:
+  - train/optimizer: ADAM
+  - train/loss: L1Loss_MSEstages
+
+name: "MARNet"
+
+train:
+  batch_size: 1
+  max_epochs: 2
+  num_workers: 8
+
+callbacks:
+  - _target_: utils.callbacks.post_fine_tune.PostFineTune
+    max_epochs: ${model.train.max_epochs}
+    loss_function:
+      _target_: utils.losses.L1
+    lr: 1.e-3
+
+module:
+  _target_: models.marnet.MARNet
+  ms_channels: ${dataset.ms_channels}
+  hs_channels: ${dataset.hs_channels}
+  iter_stages: 4
+  sampling: ${sampling}
+  features: 68
+  patch_size: 3
+  window_size: 7
