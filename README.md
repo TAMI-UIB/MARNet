@@ -101,4 +101,10 @@ If you find this work useful in your research, please consider citing:
   journal={arXiv preprint arXiv:2409.02675},
   year={2024}
 }
+
 ```
+
+---
+## Acknowledgements
+
+This work was funded by MCIN/AEI/10.13039/501100011033/ and by the European Union NextGenerationEU/PRTR via the MaLiSat project TED2021-132644B-I00.
